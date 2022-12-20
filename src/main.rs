@@ -11,8 +11,14 @@
 //     vars::run()
 // }
 
-mod types;
+// mod types;
+
+// fn main() {
+//     types::run();
+// }
+
+mod strings;
 
 fn main() {
-    types::run();
+    strings::run()
 }
