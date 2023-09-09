@@ -12,7 +12,7 @@ Arrays
 // of all variables at compile time, however, the compiler can usually infer what
 // type we want to use based on the value and how we use it.
 
-pub fn run() {
+fn run() {
     // Default is "i32" type
     let x = 1;
 
@@ -41,5 +41,17 @@ pub fn run() {
     // char type accept emojis as value
     let face = '\u{1F600}';
 
+    // tuples & arrays
+    let mut _tup = (1, true, 's');
+    let mut _arr_of_num: [i32; 4] = [1, 2, 3, 4];
+
+    // vectors
+    // vector is a collection of items of the same type;
+    let _item: Vec<i32> = vec![1, 2, 3];
+
     println!("{:?}", (x, y, _t, is_active, is_greater, a1, face))
+}
+
+fn main() {
+    run()
 }

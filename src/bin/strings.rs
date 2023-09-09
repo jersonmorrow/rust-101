@@ -1,7 +1,7 @@
 // Primitive str = Immutable fixed-length string somewhere in memory
 // String = Growable, heap-allocated data structure - Use when you need to modify or own string data
 
-pub fn run() {
+fn run() {
     // Immutable fixed-length string type
     let hello = "hello";
 
@@ -47,4 +47,8 @@ pub fn run() {
     println!("{:?}", (hello, hello_two));
 
     println!("{}", s)
+}
+
+fn main() {
+    run()
 }

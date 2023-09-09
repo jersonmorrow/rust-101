@@ -1,4 +1,4 @@
-pub fn run() {
+fn run() {
     // Print to console
     println!("hello from the print.rs");
 
@@ -31,4 +31,8 @@ pub fn run() {
 
     // Basic math
     println!("10 + 10 = {}", 10 + 10)
+}
+
+fn main() {
+    run()
 }

@@ -1,8 +1,7 @@
 // Variables hold primitive data or references to data
 // Variables are immutable by default
 // Rust is a block-scoped language
-
-pub fn run() {
+fn run() {
     let name = "brad";
     // if we want to mutate a variable we have to specify the keyword mut after let
     // we'll have a warning saying that the initial value assigned to `age` is never read
@@ -20,5 +19,15 @@ pub fn run() {
 
     // assing multiple vars
     let (my_name, my_age) = ("Brad", 37);
-    println!("{} is {}", my_name, my_age)
+    println!("{} is {}", my_name, my_age);
+
+    let _two = 2;
+    let _hello = "hello";
+    let _j = 's';
+    let _my_half: f32 = 0.5;
+    let mut _my_bool: bool = true;
+}
+
+fn main() {
+    run()
 }
